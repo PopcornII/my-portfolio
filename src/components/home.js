@@ -1,76 +1,51 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Button from 'react-bootstrap/Button';
+import React from "react";
+import HeroImage from "../assets/cool-profile.jpg";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { Link } from "react-scroll";
 
 
-import './Home.css'
+const Home = () => {
+  return (
+    <div
+      name="home"
+      className="h-screen w-full bg-gradient-to-b from-blue-950 via-gray-600 to-gray-500 text-white"
+    >
+      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
+        <div className="flex flex-col justify-center h-full ">
+          <h2 className="text-4xl sm:text-7xl font-bold text-whitet text-justify">
+            I'm a MobileApp Developer
+          </h2>
+          <p className="text-white py-4 max-w-md">
+            I have newbie years of experience building and desgining software.
+            Currently, I love to work on web application using technologies like
+            React, Tailwind, Next JS and GraphQL.
+          </p>
 
-const Link = 'a';
+          <div>
+            <Link
+              to="portfolio"
+              smooth
+              duration={500}
+              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
+            >
+              Portfolio
+              <span className="group-hover:rotate-90 duration-300">
+                <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
+              </span>
+            </Link>
+          </div>
+        </div>
 
-function HomePage(){
-   return(
-      <div className='home-page'>
-         <h3 className='nav-bar'>
-            <Navbar data-bs-theme="light" expand='lg'>
-               <Container >
-                  <Navbar.Brand as={Link} to="/">My Portfolio</Navbar.Brand>
-                  <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                  <Navbar.Collapse id="basic-navbar-nav">
-                     <Nav className="ml-auto">
-                     <Nav.Link as={Link} to="/">Home</Nav.Link>
-                     <Nav.Link as={Link} to="/about">About</Nav.Link>
-                     <Nav.Link as={Link} to="/services">Services</Nav.Link>
-                     <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
-                     </Nav>
-                  </Navbar.Collapse>
-               </Container>
-            </Navbar>
-         </h3>
-
-         
-         
-         <div className="body-container text-center">
-            <div class="row">
-               <div class="col-6">
-                  <Button className='btn-aboutMe' variant="outline-primary">
-                     About Me
-                  </Button>
-               </div>
-               <div class="col-6">
-                     <img className="img-pf" src="/cool-profile.jpg" alt='profile'/>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col">
-                  1 of 3
-               </div>
-               <div class="col">
-                  2 of 3
-               </div>
-               <div class="col">
-                  3 of 3
-               </div>
-            </div>
-         </div>
-
-
-            
-         
-         <footer className="bg-dark text-white p-3">
-            <p>@Sok Rithy</p>
-
-         </footer>
-            
-         
+        <div className="pl-10">
+          <img
+            src={HeroImage}
+            alt="my profile"
+            className="rounded-2xl mx-auto md:w-full w-2/3 "
+          />
+        </div>
       </div>
+    </div>
+  );
+};
 
-      
-      
-            
-   );
-
-
-}
-export default HomePage;
+export default Home;

@@ -1,25 +1,29 @@
 
-import './App.css';
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import NavBar from "./components/NavBar";
+import './index.css'
 import Home from "./components/Home";
 import About from "./components/About";
-import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Experience from "./components/Experience";
+import Portfolio from "./components/Portfolio"
+import SocialLinks from "./components/SocialLinks"
+
+
+
 
 function App() {
   return (
-    <Router>
-      <div>
-        {/* Add Navigation here if needed */}
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </div>
-    </Router>
+    <div>
+      <NavBar/>
+      <Home/>
+      <About/>
+      <Portfolio/>
+      <Experience/>
+      <SocialLinks/>
+      <Contact/>
+    </div>
+   
   );
 }
 
