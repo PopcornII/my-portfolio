@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImage from "../assets/cool-profile.jpg";
+import HeroImage from "../assets/PF.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 
@@ -12,13 +12,13 @@ const Home = () => {
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full ">
-          <h2 className="text-4xl sm:text-7xl font-bold text-whitet text-justify">
-            I'm a MobileApp Developer
+          <h2 className="text-4xl sm:text-7xl font-bold text-whitet text-start">
+            I'm a Software Engineer
           </h2>
-          <p className="text-white py-4 max-w-md">
-            I have newbie years of experience building and desgining software.
-            Currently, I love to work on web application using technologies like
-            React, Tailwind, Next JS and GraphQL.
+          <p className="text-white py-4 max-w-md text-justify">
+            As a bachelor student in Software Engineering, My passion to build and desgining web and mobile application software.
+            Currently, I favor to work on web application and android mobile application development using technologies like
+            React, Tailwind, Node JS, Android SDK, Java, Kotlin, and MySQL.
           </p>
 
           <div>
@@ -36,7 +36,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="pl-10">
+        <div className="pl-10  ">
           <img
             src={HeroImage}
             alt="my profile"

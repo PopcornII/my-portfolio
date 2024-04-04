@@ -1,7 +1,8 @@
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
+import { FaGithub, FaGitlab, FaLinkedin } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+
+
 
 const SocialLinks = () => {
   const links = [
@@ -12,7 +13,7 @@ const SocialLinks = () => {
           LinkedIn <FaLinkedin size={30} />
         </>
       ),
-      href: "#",
+      href: "http://www.linkedin.com/in/rithy-sok-65304b302",
       style: "rounded-tr-md",
     },
     {
@@ -22,16 +23,16 @@ const SocialLinks = () => {
           GitHub <FaGithub size={30} />
         </>
       ),
-      href: "#",
+      href: "https://github.com/PopcornII",
     },
     {
       id: 3,
       child: (
         <>
-          Mail <HiOutlineMail size={30} />
+          GitLab <FaGitlab size={30} />
         </>
       ),
-      href: "#",
+      href: "https://gitlab.com/users/rithysok703/projects",
     },
     {
       id: 4,
@@ -42,7 +43,7 @@ const SocialLinks = () => {
       ),
       href: "/resume.pdf",
       style: "rounded-br-md",
-      download: true,
+      download: "resume.pdf",
     },
   ];
 
@@ -59,7 +60,7 @@ const SocialLinks = () => {
             }
           >
             <a
-              href={href}
+              href={download ? href : null}
               className="flex justify-between items-center w-full text-blue-950"
               download={download}
               target="_blank"

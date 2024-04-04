@@ -1,10 +1,10 @@
 import React from "react";
-import arrayDestruct from "../assets/cool-profile.jpg";
-import installNode from "../assets/cool-profile.jpg";
-import navbar from "../assets/cool-profile.jpg";
-import reactParallax from "../assets/cool-profile.jpg";
-import reactSmooth from "../assets/cool-profile.jpg";
-import reactWeather from "../assets/cool-profile.jpg";
+import arrayDestruct from "../assets/arrayDestruct.jpg";
+import installNode from "../assets/installNode.jpg";
+import navbar from "../assets/navbar.jpg";
+import reactParallax from "../assets/reactParallax.jpg";
+import reactSmooth from "../assets/reactSmooth.jpg";
+import reactWeather from "../assets/as.png";
 
 const Portfolio = () => {
   const portfolios = [
@@ -37,7 +37,7 @@ const Portfolio = () => {
   return (
     <div
       name="portfolio"
-      className="bg-gradient-to-b from-blue-950 to-gray-500 w-full text-white md:h-screen"
+      className="bg-gradient-to-b from-blue-950 to-gray-500 w-full text-white my-auto md:h-screen py-auto"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-0">
@@ -47,7 +47,7 @@ const Portfolio = () => {
           <p className="py-6">Check out some of my work right here</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 ">
           {portfolios.map(({ id, src }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img

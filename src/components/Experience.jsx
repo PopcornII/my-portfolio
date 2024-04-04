@@ -1,13 +1,15 @@
 import React from "react";
 
-import html from "../assets/cool-profile.jpg";
-import css from "../assets/cool-profile.jpg";
-import javascript from "../assets/cool-profile.jpg";
-import reactImage from "../assets/cool-profile.jpg";
-import nextjs from "../assets/cool-profile.jpg";
-import graphql from "../assets/cool-profile.jpg";
-import github from "../assets/cool-profile.jpg";
-import tailwind from "../assets/cool-profile.jpg";
+import html from "../assets/html.png";
+import css from "../assets/css.png";
+import javascript from "../assets/javascript.png";
+import reactImage from "../assets/react.png";
+import nodejs from "../assets/node.png";
+import mysql from "../assets/mysql.png";
+import github from "../assets/github.png";
+import tailwind from "../assets/tailwind.png";
+//import gitlab from "../assets/gitlab.png";
+import java from "../assets/jvax.png";
 
 const Experience = () => {
   const techs = [
@@ -43,14 +45,14 @@ const Experience = () => {
     },
     {
       id: 6,
-      src: nextjs,
-      title: "Next JS",
+      src: nodejs,
+      title: "Node JS",
       style: "shadow-white",
     },
     {
       id: 7,
-      src: graphql,
-      title: "GraphQL",
+      src: mysql,
+      title: "MySQL",
       style: "shadow-pink-400",
     },
     {
@@ -59,14 +61,22 @@ const Experience = () => {
       title: "GitHub",
       style: "shadow-gray-400",
     },
+    {
+      id: 9,
+      src: java,
+      title: "Java",
+      style: "shadow-orange-500",
+    },
+    
+    
   ];
 
   return (
     <div
       name="experience"
-      className="bg-gradient-to-b  from-gray-500 to-blue-950  w-full h-screen"
+      className="bg-gradient-to-b  from-gray-500 to-blue-950  w-full mx-auto, py-auto h-screen justify-center scroll-py-20"
     >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white pt-60" >
+      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white pt-auto" >
         <div>
           <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
             Experience
